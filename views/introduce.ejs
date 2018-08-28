@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      <%= title %>
+    </title>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/header'); %>
+
+    <article class="uk-article">
+      <div class="uk-margin-top" property="image">
+        <img src="images/introduce.jpg" alt="colleague">
+      </div>
+  
+      <div class="uk-container uk-container-small">
+        <h2 class="uk-margin-large-top uk-margin-remove-bottom uk-text-center uk-article-title">This is sample text.</h2>
+        <p class="uk-margin-top uk-margin-remove-bottom uk-article-meta uk-text-center">Subtext.</p>
+        <div class="uk-margin-medium-top uk-margin-large-bottom" property="text">
+          <p class="uk-text-lead">First paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque temporibus nihil architecto, quis earum iure similique quos repudiandae ratione eligendi.
+          </p>
+          <p>
+            Second paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cum ipsum quia aperiam illum provident obcaecati rerum. Repudiandae assumenda, alias tenetur nesciunt ex pariatur maiores eum debitis fuga ducimus explicabo perferendis iure ea aut cupiditate deserunt aliquid, laboriosam praesentium modi.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>
