@@ -5,7 +5,40 @@
     <%- include('partials/head'); %>
   </head>
   <body>
-    <%- include('partials/top_bar'); %>
+    <%- include('partials/header'); %>
 
+    <!-- TODO: image loading problem in other devices. need to fix. -->
+    <!-- homepage image slideshow -->
+    <div class="uk-position-relative uk-visible-toggle" uk-slideshow="autoplay: true">
+      <ul class="uk-slideshow-items">
+        <% for (let i = 0; i < 4; i++) {%>
+          <li>
+            <img src="images/home_<%= i+1 %>.jpg" alt="test<%= i+1 %>" uk-cover>
+          </li>
+          <% } %>
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
+    <!-- grid -->
+    <div class="uk-container uk-margin-medium">
+      <div class="uk-grid-match uk-child-width-expand@m uk-grid-small uk-grid-divider" uk-grid uk-height-match="target: > div > div">
+        <div>
+          <h3>Notice</h3>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eveniet!</div>
+        </div>
+        <div>
+          <h3>News</h3>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque.</div>
+        </div>
+        <div>
+          <h3>Board</h3>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias voluptate perspiciatis, dicta voluptas aliquid odio id libero illum commodi praesentium ab dolor aspernatur doloribus atque quis eos ullam! Alias.</div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
   </body>
 </html>
