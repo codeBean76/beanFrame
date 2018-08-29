@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/header'); %>
+
+    <!-- TODO: images broke problem. need to fix. -->
+    <div class="uk-section-default uk-section" uk-scrollspy="{"target':"[uk-scrollspy-class]","cls":"uk-animation-slide-bottom-medium","delay":300}">
+      <div class="uk-container">
+        <div class="uk-margin-large uk-grid uk-grid-stack" uk-grid>
+          <div class="uk-width-1-1@m">
+            <h2 class="uk-width-medium uk-h2 uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class>Members</h2>
+            <div class="uk-divider-small uk-scrollspy-inview uk-animation-slide-bottom-medium"></div>
+          </div>
+        </div>
+        <div class="uk-grid-margin uk-grid" uk-grid>
+          <% for (let i = 0; i < 7; i++) {%>
+            <div class="uk-width-1-4@m uk-width-1-2@s">
+              <div class="uk-margin uk-panel uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class>
+                <img src="images/profile/profile_<%= i+1 %>.jpg" alt="profile<%= i+1 %>" class="uk-box-shadow-medium uk-box-shadow-hover-large" uk-img>
+                <h3 class="uk-margin uk-margin-remove-adjacent uk-margin-remove-bottom">Name Example <%= i+1 %></h3>
+                <div class="uk-margin uk-text-muted">Position Example <%= i+1 %></div>
+              </div>
+            </div>
+          <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>
