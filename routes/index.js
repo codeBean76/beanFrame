@@ -14,4 +14,8 @@ router.get('/members', (req, res, next) => {
   res.render('members', { title: 'Members' });
 });
 
+router.get('/notice', (req, res, next) => {
+  res.render('notice', { title: 'Notice' });
+});
+
 module.exports = router;

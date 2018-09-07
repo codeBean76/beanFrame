@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/header'); %>
+
+    <div class="uk-section uk-section-default">
+      <div class="uk-container">
+        <div class="uk-margin-large">
+          <div class="uk-width-1-1@m">
+            <h2 class="uk-width-medium uk-h2">Notice</h2>
+            <div class="uk-divider-small"></div>
+          </div>
+        </div>
+        <div class="uk-margin-large">
+          <table class="uk-table uk-table-divider">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Writer</th>
+                <th>Date</th>
+                <th>View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3</td>
+                <td>이런저런이야기</td>
+                <td>coltd</td>
+                <td>2018.8.29.</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>정회원공지사항</td>
+                <td>soultree</td>
+                <td>2018.6.1.</td>
+                <td>128</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>첫번째공지</td>
+                <td>administrator</td>
+                <td>2017.12.31.</td>
+                <td>2000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>
