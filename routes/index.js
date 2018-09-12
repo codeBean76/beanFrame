@@ -18,4 +18,8 @@ router.get('/notice', (req, res, next) => {
   res.render('notice', { title: 'Notice' });
 });
 
+router.get('/video', (req, res, next) => {
+  res.render('video', { title: 'Video' });
+});
+
 module.exports = router;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('partials/head'); %>
+  </head>
+  <body>
+    <%- include('partials/header'); %>
+
+    <div class="uk-section uk-section-default">
+      <div class="uk-container">
+        <div class="uk-margin-large">
+          <div class="uk-width-1-1@m">
+            <h2 class="uk-width-medium uk-h2">Video</h2>
+            <div class="uk-divider-small"></div>
+          </div>
+        </div>
+
+        <!-- Video grid -->
+        <!-- TODO: Not fit in grid. Need to fix. -->
+        <div class="uk-margin-large">
+          <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-small">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zwvUnK-agb4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gyoyz08f_O8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OxgiiyLp5pk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kYCW7Ea9p1E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+  </body>
+</html>
